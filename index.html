@@ -66,7 +66,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-4 col-md-4 offset-md-4 offset-sm-4">
                         <div class="col-xs-12 no-space" onclick="openStyleBookPreview();" style="cursor:pointer;">
-                            <img class="img-responsive report-img" src="assets/img/page-0.jpg" alt="Soumendra's Wedding Card Cover">
+                            <img class="img-responsive report-img" src="assets/img/page-0.jpg?v1.0" alt="Soumendra's Wedding Card Cover">
                             <div class="marker-div">
                                 
                             </div>
@@ -195,7 +195,7 @@ function createStyleBook(stylebookID){
             let pageList = [];
             for(var i=1; i<=4; i++){
                 var bpage = page.cloneNode(true);
-                bpage.setAttribute('data-image', `assets/img/page-${i}.jpg`);
+                bpage.setAttribute('data-image', `assets/img/page-${i}.jpg?v1.0`);
                 pageList.push(bpage.cloneNode(true));
             }
             $.wowBook(stylebookID).removePages(0, $.wowBook(stylebookID).pages.length -1);
